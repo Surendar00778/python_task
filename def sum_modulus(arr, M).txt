@@ -1,0 +1,11 @@
+def sum_modulus(arr, M):
+    result = 0
+    for num in arr:
+        result += abs(num - M)
+    return result
+
+# Example usage:
+my_array = [1, 2, 3, 4, 5]
+my_M = 3
+result = sum_modulus(my_array, my_M)
+print(result)  # This will print 7 (|1-3| + |2-3| + |3-3| + |4-3| + |5-3| = 7)
